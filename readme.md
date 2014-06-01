@@ -7,3 +7,6 @@ selectorのoptionに指定しているClassと、同一のIDを割り当てら�
 
 Content which the same ID and Class that is specified in the selection option is assigned is displayed. 
 When you change the selection, the contents of the content will be exchanged.
+
+GNU General Public License
+Author:YAT(yat823jp)
