@@ -1,6 +1,6 @@
 $(function(){
 
-	var selector = "select#name"
+	var selector = "select#member-selector"
 	var elem_all = Array();
 
 	activeSelect();
@@ -26,5 +26,10 @@ $(function(){
 		activeSelect();
 	}
 	
-	 document.querySelector(selector).addEventListener("change",changeActive,false);
+	if (document.addEventListener) {
+		 document.querySelector(selector).addEventListener("change",changeActive,false);
+	}else{
+		//for ie8&Opera
+		document.querySelector(selector).attachEvent("onclick",changeActive);
+	}
 });
